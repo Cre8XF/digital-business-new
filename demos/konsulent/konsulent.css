@@ -1,0 +1,178 @@
+/* =========================================================
+   KONSULENT.CSS — blå/cyan, profesjonell (ikke lilla)
+   Scope: .theme-konsulent på <body>
+   ========================================================= */
+
+/* 1) Brand-variabler for denne siden */
+.theme-konsulent {
+  --brand: #1d4ed8; /* blue-700 */
+  --brand-2: #0ea5e9; /* cyan-500 */
+  --accent: #10b981; /* emerald-500 */
+}
+
+/* 2) Lys/nøytral palett i demo-seksjoner */
+.theme-konsulent .demo-neutral {
+  --bg-0: #f7fafc;
+  --bg-1: #ffffff;
+  --surface-1: #ffffff;
+  --surface-2: #f3f7fd;
+  --surface-3: #ecf3ff;
+  --brand: #1d4ed8; /* BLÅ – overstyrer demo.css */
+  --brand-2: #0ea5e9; /* CYAN – overstyrer demo.css */
+
+  --text: #0f172a;
+  --muted: #475569;
+  --hair: #e4ecf6;
+  --shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+
+  --badge-bg: #e0f2fe;
+  --badge-fg: #075985; /* sky */
+  --price-fg: #0284c7; /* sky-600 */
+
+  background: var(--surface-3);
+  color: var(--text);
+}
+.theme-konsulent .section-plain.demo-neutral {
+  background: var(--surface-2);
+}
+.theme-konsulent .section-alt.demo-neutral {
+  background: var(--surface-3);
+}
+.theme-konsulent .emphasis {
+  background: linear-gradient(180deg, #f8fbff, #eef6ff);
+  border: 1px solid #dbeafe;
+  color: var(--text);
+}
+.theme-konsulent .emphasis h3 {
+  margin-top: 0;
+}
+
+/* 3) Kort, badges, priser */
+.theme-konsulent .card {
+  background: var(--surface-1);
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.theme-konsulent .badge {
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+.theme-konsulent .price {
+  color: var(--price-fg);
+}
+.theme-konsulent .emphasis {
+  background: linear-gradient(180deg, #f8fbff, #eef6ff);
+  border-color: #dbeafe;
+}
+
+/* 4) Galleri – diskret hover */
+.theme-konsulent .shot {
+  border: 1px solid var(--hair);
+}
+.theme-konsulent .shot:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.02);
+}
+
+/* 5) Promo/Callout – blå/cyan gradient */
+.theme-konsulent .promo,
+.theme-konsulent .callout {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #fff;
+}
+
+/* 6) Hero – Tving blå/cyan (hindrer lilla fra :root/style.css) */
+.theme-konsulent .hero {
+  /* NB: !important for å overstyre global hero-bg hvis nødvendig */
+  background: linear-gradient(135deg, var(--brand), var(--brand-2)) !important;
+  color: #fff;
+}
+
+/* 7) Hero-info – glass på blå/cyan */
+.theme-konsulent .hero-info {
+  background: color-mix(in oklab, #ffffff 18%, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  color: #fff;
+}
+
+/* 8) Skjema – hvite felter, blå fokus */
+.theme-konsulent .demo-neutral input,
+.theme-konsulent .demo-neutral select,
+.theme-konsulent .demo-neutral textarea {
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--hair);
+  border-radius: 12px;
+  padding: 10px 12px;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+.theme-konsulent .demo-neutral input:focus,
+.theme-konsulent .demo-neutral select:focus,
+.theme-konsulent .demo-neutral textarea:focus {
+  border-color: color-mix(in oklab, var(--brand) 60%, #ffffff);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand) 22%, transparent), 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* 9) Knapper i lyse seksjoner */
+.theme-konsulent .demo-neutral .btn-ghost {
+  background: #fff;
+  border: 1px solid var(--hair);
+  color: var(--brand);
+}
+.theme-konsulent .demo-neutral .btn-primary {
+  box-shadow: 0 10px 20px rgba(29, 78, 216, 0.18);
+}
+/* Prefooter/CTA: alltid blå/cyan i konsulent-tema */
+.theme-konsulent .promo,
+.theme-konsulent .callout,
+.theme-konsulent .cta-band {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2)) !important;
+  color: #fff;
+}
+
+/* Hvis noe fortsatt har hardkodet lilla (gamle hex’er), nøytraliser det */
+.theme-konsulent [style*='#e11d48'],
+.theme-konsulent [style*='#a855f7'] {
+  background: var(--surface-2) !important; /* lys, nøytral */
+  background-image: none !important;
+  color: var(--text) !important;
+  border-color: var(--hair) !important;
+}
+/* Siste seksjon før footer: lys bakgrunn, ingen gradientrester */
+.theme-konsulent .section:last-of-type {
+  background: var(--surface-2) !important;
+}
+
+/* Footer: kun mørk base – ingen pseudo-elementer eller topper */
+.theme-konsulent footer {
+  background: var(--bg-1) !important;
+}
+.theme-konsulent footer::before,
+.theme-konsulent footer::after {
+  content: none !important;
+}
+/* 🔵 Lås blå/cyan også INNE i demo-seksjoner (overstyrer demo.css) */
+.theme-konsulent .demo-neutral {
+  --brand: #1d4ed8; /* blå */
+  --brand-2: #0ea5e9; /* cyan */
+}
+/* Fjern evt. dekorstriper/pseudo-elementer før footer */
+.theme-konsulent .section:last-of-type {
+  background: var(--surface-2) !important;
+  border-top: none !important;
+}
+.theme-konsulent .section:last-of-type::before,
+.theme-konsulent .section:last-of-type::after {
+  content: none !important;
+}
+
+/* Footer alltid mørk base uten ekstra pynt */
+.theme-konsulent footer {
+  background: var(--bg-1) !important;
+}

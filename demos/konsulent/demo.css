@@ -1,0 +1,93 @@
+/* ============================
+   DEMO.CSS – lys/nøytral palett
+   - Ingen hardkodede farger, kun variabler
+   - Palett aktiveres via .demo-neutral (se index.html)
+   ============================ */
+
+/* Badge */
+.badge {
+  display: inline-block;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
+
+/* Features & Pricing grids */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Price highlight */
+.price {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--price-fg);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.shot {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface-1);
+  border: 1px solid var(--hair);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.shot:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.03);
+}
+.shot img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------------------------------
+   LYS / NØYTRAL DEMO-PALETT (scopet)
+   Legg klassen .demo-neutral på <section>
+   --------------------------------- */
+.demo-neutral {
+  /* Bakgrunner (seksjon + kort) */
+  --bg-0: #f7f9fc;
+  --bg-1: #ffffff;
+  --surface-1: #ffffff;
+  --surface-2: #f2f5fb;
+  --surface-3: #eaf0fb;
+
+  /* Tekst/linjer/skyggge */
+  --text: #0f172a;
+  --muted: #475569;
+  --hair: #e6eaf2;
+  --shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+
+  /* Brand/aksenter */
+  --brand: #2563eb;
+  --brand-2: #7c3aed;
+  --accent: #0ea5e9;
+
+  /* Elementer i denne filen */
+  --badge-bg: #eef2ff; /* indigo-100 */
+  --badge-fg: #4338ca; /* indigo-700 */
+  --price-fg: #0ea5e9; /* cyan-500 */
+
+  /* Sørg for at teksten faktisk blir mørk inne i seksjonen */
+  color: var(--text);
+}

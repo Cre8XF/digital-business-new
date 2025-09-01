@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <script>
+      if (location.hostname.endsWith('github.io')) {
+        const repo = location.pathname.split('/')[1] || '';
+        const base = document.createElement('base');
+        base.href = '/' + repo + '/';
+        document.head.prepend(base);
+      }
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ProKonsult – Strategisk business rådgivning</title>
+    <meta name="description" content="Skreddersydd rådgivning for SMB: strategi, prosessoptimalisering og organisasjonsutvikling." />
+      
+<link rel="stylesheet" href="../../assets/css/base.css"> <!-- felles -->
+<link rel="stylesheet" href="./demo.css"> <!-- lokalt i mappen -->
+<link rel="stylesheet" href="./style.css"> <!-- lokalt i mappen -->
+<link rel="stylesheet" href="./konsulent.css"> <!-- tema, ALLTID sist -->
+
+
+</head>
+  <body class="theme-konsulent">
+    <nav class="nav">
+      <div class="bar container">
+        <div class="brand"><span class="logo"></span><span>ProKonsult</span></div>
+        <div class="menu" data-menu>
+          <a href="#hjem">Hjem</a><a href="#tjenester">Tjenester</a><a href="#om-meg">Om meg</a><a href="#referanser">Referanser</a
+          ><a href="#kontakt" class="btn btn-primary" style="padding: 8px 14px">Gratis konsultasjon</a>
+        </div>
+        <button class="btn btn-ghost" data-menu-btn aria-label="Meny">☰</button>
+      </div>
+    </nav>
+    <header id="hjem" class="hero">
+      <div class="container grid" style="grid-template-columns: 1.1fr 1fr; align-items: center; gap: 26px">
+        <div>
+          <span class="badge">🚀 Strategisk rådgivning</span>
+          <h1>Vekst gjennom <span style="color: #a5f3fc">smart strategi</span></h1>
+          <p>Jeg hjelper små og mellomstore bedrifter med å optimalisere drift, øke lønnsomhet og skape bærekraftig vekst.</p>
+          <div class="cta">
+            <a href="#kontakt" class="btn btn-primary" style="color: #0b1220; background: linear-gradient(135deg, #fde047, #fbbf24)">Book gratis konsultasjon</a
+            ><a href="#tjenester" class="btn btn-ghost">Se mine tjenester</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="num">150+</div>
+              <div>Prosjekter</div>
+            </div>
+            <div class="stat">
+              <div class="num">15+</div>
+              <div>År erfaring</div>
+            </div>
+            <div class="stat">
+              <div class="num">95%</div>
+              <div>Fornøyde kunder</div>
+            </div>
+          </div>
+        </div>
+        <aside class="card hero-info" style="text-align:center">
+          <div style="font-size: 64px">💼</div>
+          <div style="font-weight: 800; margin: 6px 0">Lars Andersen</div>
+          <div style="color: #cfe7ff">Senior Business Konsulent</div>
+          <div style="margin-top: 8px; color: #dbeafe; font-size: 0.95rem">📧 lars@prokonsult.no<br />📞 +47 900 12 345<br />📍 Oslo / Digitalt</div>
+        </aside>
+      </div>
+    </header>
+    <section id="tjenester" class="section demo-neutral">
+      <div class="container">
+        <h2 class="title">Mine tjenester</h2>
+        <p class="subtitle">Skreddersydde leveranser som gir målbare resultater</p>
+        <div class="grid features">
+          <article class="feature">
+            <div class="badge" style="background: #dbeafe; color: #1d4ed8">📊 Strategisk planlegging</div>
+            <h3>Langsiktig vekst</h3>
+            <ul style="margin: 0; padding-left: 18px; color: #334155">
+              <li>Markedsanalyse & posisjonering</li>
+              <li>Forretningsmodell-optimalisering</li>
+              <li>Vekststrategi og roadmap</li>
+              <li>Konkurranseanalyse</li>
+            </ul>
+            <div style="margin-top: 10px" class="price"><span style="color: #2563eb">Fra</span> 15 000 kr</div>
+          </article>
+          <article class="feature">
+            <div class="badge" style="background: #dcfce7; color: #065f46">⚡ Prosessoptimalisering</div>
+            <h3>Effektiv drift</h3>
+            <ul style="margin: 0; padding-left: 18px; color: #334155">
+              <li>Prosessanalyse & kartlegging</li>
+              <li>Automatisering & digitalisering</li>
+              <li>Kostnadsreduksjon</li>
+              <li>Kvalitetssikring</li>
+            </ul>
+            <div style="margin-top: 10px" class="price"><span style="color: #2563eb">Fra</span> 12 000 kr</div>
+          </article>
+          <article class="feature">
+            <div class="badge" style="background: #fae8ff; color: #6b21a8">👥 Organisasjonsutvikling</div>
+            <h3>Sterke team</h3>
+            <ul style="margin: 0; padding-left: 18px; color: #334155">
+              <li>Lederutvikling & coaching</li>
+              <li>Teambuilding & kultur</li>
+              <li>Endringsledelse</li>
+              <li>Kompetanseutvikling</li>
+            </ul>
+            <div style="margin-top: 10px" class="price"><span style="color: #2563eb">Fra</span> 18 000 kr</div>
+          </article>
+        </div>
+        <div class="card pkg" style="margin-top: 22px">
+          <div class="card emphasis">🎯 Pakkeløsning: Komplett Business Audit</div>
+          <p style="margin: 10px 0 14px">Helhetlig gjennomgang med konkrete anbefalinger for forbedring.</p>
+          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+            <div class="card"><strong>Uke 1–2</strong><br />Analyse & kartlegging</div>
+            <div class="card"><strong>Uke 3</strong><br />Rapport & anbefalinger</div>
+            <div class="card"><strong>Uke 4</strong><br />Implementeringsplan</div>
+          </div>
+          <div style="margin-top: 14px; font-weight: 900" class="price"><span style="text-decoration: line-through; color: #94a3b8">45 000 kr</span> &nbsp; <span>35 000 kr</span></div>
+          <p style="margin-top: 10px"><a href="#kontakt" class="btn btn-primary" style="background: linear-gradient(135deg, #fde047, #fbbf24); color: #0b1220">Book Business Audit</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="om-meg" class="section section-plain demo-neutral">
+      <div class="container grid" style="grid-template-columns: 1.1fr 0.9fr; gap: 24px; align-items: center">
+        <div>
+          <h2 class="title">Om Lars Andersen</h2>
+          <p class="subtitle">Analytisk tilnærming + praktisk gjennomføring = resultater</p>
+          <p>15+ år fra ledende konsulentmiljøer. Har bistått bedrifter i teknologi, industri, handel og profesjonelle tjenester.</p>
+          <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; color: #334155">
+            <div class="card"><strong>Siviløkonom, NHH</strong><br /><span class="muted">Strategi & finans</span></div>
+            <div class="card"><strong>Senior Partner, McKinsey</strong><br /><span class="muted">8 år – SMB fokus</span></div>
+            <div class="card"><strong>Sertifisert coach</strong><br /><span class="muted">ICF akkreditert</span></div>
+            <div class="card"><strong>Bransjeerfaring</strong><br /><span class="muted">Tech, industri, handel</span></div>
+          </div>
+          <p style="margin-top: 14px"><a href="#kontakt" class="btn btn-primary">La oss snakke sammen</a></p>
+        </div>
+        <aside class="card hero-info" style="text-align:center">
+
+          <div
+            style="
+              width: 140px;
+              height: 140px;
+              border-radius: 999px;
+              background: linear-gradient(135deg, #60a5fa, #06b6d4);
+              margin: 0 auto 10px;
+              display: grid;
+              place-items: center;
+              font-weight: 900;
+              color: #fff;
+              font-size: 38px;
+            "
+          >
+            LA
+          </div>
+          <div style="font-weight: 800">Lars Andersen</div>
+          <div style="color: #64748b">Senior Business Konsulent</div>
+          <div style="margin-top: 8px" class="badge">Spesialområder</div>
+          <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px">
+            <span class="badge" style="background: #dbeafe; color: #1d4ed8">Strategi</span><span class="badge" style="background: #dcfce7; color: #065f46">Prosess</span
+            ><span class="badge" style="background: #fae8ff; color: #6b21a8">Leder</span><span class="badge" style="background: #fef9c3; color: #92400e">Endring</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section id="referanser" class="section section-alt demo-neutral">
+      <div class="container">
+        <h2 class="title">Hva kundene sier</h2>
+        <p class="subtitle">Resultater som snakker for seg selv</p>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+          <div class="card">
+            <strong>TechInnovate AS</strong><br /><em>IT‑konsulent</em>
+            <p>"Restrukturerte organisasjonen vår – 40% økt produktivitet."</p>
+            <div style="color: #fbbf24">⭐⭐⭐⭐⭐</div>
+            <div class="muted">+40% produktivitet</div>
+          </div>
+          <div class="card">
+            <strong>Nordic Production</strong><br /><em>Produksjon</em>
+            <p>"Prosessforbedringer sparte oss 2,5M i året."</p>
+            <div style="color: #fbbf24">⭐⭐⭐⭐⭐</div>
+            <div class="muted">2,5M kr spart/år</div>
+          </div>
+          <div class="card">
+            <strong>Digital Solutions</strong><br /><em>E‑commerce</em>
+            <p>"150% vekst på 18 mnd. Svært fornøyde."</p>
+            <div style="color: #fbbf24">⭐⭐⭐⭐⭐</div>
+            <div class="muted">+150% vekst</div>
+          </div>
+        </div>
+        <div class="card emphasis" style="margin-top:16px">
+          <h3>📈 Utvalgte case studies</h3>
+          <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px">
+            <div class="card">
+              <strong>Produksjonsbedrift – Kostnadsreduksjon</strong>
+              <p><b>Utfordring:</b> Høye kostnader, ineffektive prosesser<br>
+                <b>Løsning:</b> Lean + automatisering<br>
+                <b>Resultat:</b> 35% kost ned på 6 mnd
+              </p>
+            </div>
+            <div class="card">
+              <strong>IT-selskap – Vekststrategi</strong>
+              <p><b>Utfordring:</b> Stagnasjon og tap av andeler<br>
+                <b>Løsning:</b> Ny strategi + produktutvikling<br>
+                <b>Resultat:</b> 200% omsetningsvekst (2 år)
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  <section id="kontakt" class="section section-plain demo-neutral">
+      <div class="container grid columns" style="gap: 18px">
+        <div class="card" style="background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff">
+          <h3>🎯 Gratis konsultasjon</h3>
+          <p>30 minutter – identifiser utfordringer, få råd, ingen forpliktelser.</p>
+          <a class="btn" style="background: #fff; color: #0b1220" href="tel:+4790012345">Ring nå: 900 12 345</a>
+        </div>
+        <div class="card">
+          <h2 class="title" style="margin-top: 0">La oss diskutere dine utfordringer</h2>
+          <p class="subtitle">Book en gratis 30‑minutters konsultasjon</p>
+          <form id="consult-form" class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px">
+            <label>Ditt navn<input required type="text" /></label><label>Bedrift<input required type="text" /></label><label>E‑post<input required type="email" /></label
+            ><label>Telefon<input type="tel" /></label
+            ><label style="grid-column: 1/-1">Hvilke utfordringer har dere?<textarea rows="4" placeholder="Kort om områdene du ønsker hjelp med…"></textarea></label>
+            <div style="grid-column: 1/-1"><button class="btn btn-primary" type="submit">Send forespørsel</button></div>
+            <p style="grid-column: 1/-1; color: var(--muted); font-size: 0.9rem"><strong>Demo‑melding:</strong> Dette er en eksempel konsulent‑nettside laget av Cre8XF.</p>
+          </form>
+        </div>
+        <aside class="grid" style="gap: 16px">
+          <div class="card">
+            <h3>📞 Direkte kontakt</h3>
+            <p>📧 lars@prokonsult.no<br />📱 900 12 345<br />💼 LinkedIn: /in/lars-andersen-konsulent</p>
+          </div>
+         
+          <div class="card">
+            <h3>⏰ Responstid</h3>
+            <p>• E‑post: innen 4 t<br />• Telefon: samme dag<br />• Møtebooking: innen 48 t<br />• Tilbud: innen 24 t</p>
+          </div>
+          <div class="card" style="background: #fff7ed; border: 1px solid #fed7aa">
+            <h3>💡 Få gratis innsikt</h3>
+            <div style="display: flex"><input type="email" placeholder="Din e‑post" /><button class="btn btn-primary" style="margin-left: 8px">Meld på</button></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer>
+      <div class="container grid" style="grid-template-columns: 2fr 1fr 1fr 1fr; gap: 16px">
+        <div>
+          <div class="brand"><span class="logo"></span><span>ProKonsult</span></div>
+          <p style="color: #c9d1e9">Strategisk rådgivning som skaper målbare resultater.</p>
+        </div>
+        <div>
+          <h4 style="margin: 0 0 8px">Tjenester</h4>
+          <ul style="margin: 0; padding-left: 18px">
+            <li>Strategisk planlegging</li>
+            <li>Prosessoptimalisering</li>
+            <li>Organisasjonsutvikling</li>
+            <li>Business audit</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin: 0 0 8px">Bransjer</h4>
+          <ul style="margin: 0; padding-left: 18px">
+            <li>Teknologi & IT</li>
+            <li>Produksjon</li>
+            <li>Handel & e‑com</li>
+            <li>Profesjonelle tjenester</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin: 0 0 8px">Kontakt</h4>
+          <ul style="margin: 0; padding-left: 18px">
+            <li>📧 lars@prokonsult.no</li>
+            <li>📞 900 12 345</li>
+            <li>📍 Oslo, Norge</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container" style="text-align: center; color: #9aa5c7; border-top: 1px solid #16233f; margin-top: 18px; padding-top: 18px">
+        © 2025 ProKonsult • Nettside laget av <strong>Cre8XF</strong>
+      </div>
+    </footer>
+  
+<script src="../../assets/js/app.js"></script>
+</body>
+</html>
